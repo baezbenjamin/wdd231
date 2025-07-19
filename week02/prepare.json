@@ -1,0 +1,23 @@
+{
+    "family_name" : "Baez",
+    "moved_date" : "07/15/2010",
+    "people_in_family" : 5,
+    "visited_bishopric" : false,
+    "family_members": [
+        {
+            "name" : "Nelson Baez",
+            "gender" : "M",
+            "birthdate" : "08/09/1974"
+        },
+        {
+            "name": "Fabiola Baez",
+            "gender": "F",
+            "birthdate": "09/13/1981"
+        },
+        {
+            "name": "Benjamin Baez",
+            "gender": "M",
+            "birthdate": "09/06/2003"
+        }
+    ]
+}

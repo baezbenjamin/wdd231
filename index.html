@@ -1,45 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles/normalize.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 231 - Home Page</title>
-    <meta property="og:description" content="Let me introduce myself and the projects that I have developed">
-    <meta property="og:image" content="images/profile.jpg">
-    <meta property="og:title" content="WDD 231 - Home Page">
-    <meta property="og:url" content="https://baezbenjamin.github.io/wdd231/">
+    <meta description="Front End Development I Course Home Page">
+    <meta author="Benjamin Baez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/navigation.js" defer></script>
-    <link rel="icon" href="images/favicon.ico">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 <body>
     <header>
-        <!-- <img src="images/home.svg" alt="Site Logo" width="1" height="1"> -->
-        <span>Benjamin Site Title</span>
-        <!-- <button id="ham-btn" class="hamburguer"></button> -->
+        <img src="images/flag-fill.svg" alt="Page Logo">
+        <span>Benjamin Baez - WDD 231</span>
+        <button id="ham-btn" class="hamburguer"></button>
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li ><a href="#">News & Events</a></li>
-            <li class="current"><a href="#">Dedicated Temples</a></li>
-            <li><a href="#">Announced Temples</a></li>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
         </ul>
     </nav>
     <main>
-        <h1>Dedicated Temples</h1>
+        <h1>Home</h1>
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, itaque quaerat! Laboriosam quia hic placeat natus suscipit laborum excepturi mollitia deserunt ipsa unde, quaerat facilis libero laudantium ab vitae sed recusandae, illum harum corporis minus autem aut accusantium est. Consequatur, nobis! Eligendi vel facilis cupiditate doloribus ducimus quidem quisquam sapiente?</p>
+        </section>
+        <section class="photo">
+            <h2>Student Photo</h2>
+            <img src="images/profile.jpg" alt="">
+        </section>
+        <section >
+            <h2>Web Certificate Courses</h2>
+            <button id="all" class="course-buttons">All Courses</button>
+            <button id="wdd" class="course-buttons">WDD Courses</button>
+            <button id="cse" class="course-buttons">CSE Courses</button>
+            <div class="container"></div>
+            <p>The total credits for course listed above is <span id="credits"></span></p>
+        </section>
     </main>
-    <footer>
-        <div class="social">
-            <a href="https://github.com/baezbenjamin" target="_blank"><img src="images/github.svg" alt="GitHub" height="16" width="16"></a>
-            <a href="https://www.linkedin.com/in/benjam%C3%ADn-b%C3%A1ez-g%C3%B3mez/" target="_blank"><img src="images/linkedin.svg" alt="Linkedin" height="16" width="16"></a>
-            <a href="https://www.facebook.com/BenjaminBaez2003/" target="_blank"><img src="images/facebook.svg" alt="Facebook" height="16" width="16"></a>
-            <!-- <a href="https://www.instagram.com/baez_benja06/" target="_blank"><img src="images/instagram.svg" alt="Instagram" height="16" width="16"></a> -->
-        </div>
-        <p>&copy;<span id="currentyear"></span></p>
-        <p id="lastModified"></p>
-    </footer>
+<footer>
+    <div class="social">
+        <a href="https://github.com/baezbenjamin" target="_blank"><img src="images/github.svg" alt="GitHub" height="16"width="16"></a>
+        <a href="https://www.linkedin.com/in/benjam%C3%ADn-b%C3%A1ez-g%C3%B3mez/" target="_blank"><img src="images/linkedin.svg" alt="Linkedin" height="16" width="16"></a>
+        <a href="https://www.facebook.com/BenjaminBaez2003/" target="_blank"><img src="images/facebook.svg"alt="Facebook" height="16" width="16"></a>
+    </div>
+    <p>&copy;<span id="currentyear"></span>💻 Benjamin Baez 🛠 Luque, Paraguay</p>
+    <p id="lastModified"></p>
+</footer>
 </body>
 </html>
