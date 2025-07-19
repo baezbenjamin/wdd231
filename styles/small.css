@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Saira", sans-serif;
     font-weight: 400;
@@ -73,7 +79,7 @@ header span {
 }
 
 h1 {
-    margin-left: 10px;
+    margin: 10px 0 10px 10px;
 }
 
 footer {
@@ -86,6 +92,7 @@ footer {
     display: flex;
     justify-content: center;
     column-gap: 8px;
+    margin-bottom: 10px;
 }
 
 .social a {
@@ -103,18 +110,65 @@ footer {
 
 section {
     margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
-.about {
+.about, .photo {
     background-color: #eee;
 }
 
-.about h2{
+.about h2,
+.photo h2,
+.course h2 {
     background-color: #0B3954;
     color: #ddd;
     text-align: center;
+    padding: 5px;
 }
 
 .about p {
-    margin-left: 10px;
+    padding: 10px;
+}
+
+.photo {
+    text-align: center;
+}
+
+.photo img {
+    width: 200px;
+    height: auto;
+    padding: 10px;
+}
+
+.course div{
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-around;
+}
+
+div button {
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #EFF0D1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container p {
+    background-color: #EFF0D1;
+    text-align: center;
+    align-content: center;
+    width: 100%;
+    margin-bottom: 5px;
+    height: 30px;
+}
+
+.course p {
+    margin-top: 5px;
+    text-align: center;
 }
