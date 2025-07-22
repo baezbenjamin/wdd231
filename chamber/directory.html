@@ -3,13 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory</title>
+    <title>Luque Chamber of Commerce - Directory</title>
     <meta name="author" content="Benjamin Baez">
-    <meta name="description" content="Meet the People who are in charge">
+    <meta name="description" content="Meet the People who are doing businesses here">
+
+    <meta property="og:title" content="Luque Chamber of Commerce - Directory">
+    <meta property="og:description" content="Meet the People who are doing businesses here">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory-small.css">
+    <link rel="stylesheet" href="styles/directory-larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
 </head>
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+        <img src="images/shop-window.svg" alt="Logo of the Luque Chamber of Commerce">
+        <span>Luque Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburguer"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="current"><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <main>
+        <article></article>
+    </main>
+    <footer>
+        <div class="info">
+            <strong>Luque Chamber of Commerce</strong>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem, ipsum dolor.</p>
+            <p>Lorem ipsum dolor sit.</p>
+        </div>
+        <div class="social">
+            <a href="https://youtube.com" target="_blank"><img src="images/youtube.svg" alt="" height="16" width="16"></a>
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook.svg" alt="" height="16" width="16"></a>
+            <a href="https://linkedin.com" target="_blank"><img src="images/linkedin.svg" alt="" height="16" width="16"></a>
+        </div>
+        <div class="aboutme">
+            <p>WDD 231 Class Project</p>
+            <p>Benjamin Baez</p>
+            <p>&copy;<span id="currentyear"></span> Luque Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
 </body>
 </html>
