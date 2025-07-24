@@ -28,6 +28,7 @@ const displayMembers = (members) => {
         adress.textContent = member.adress;
         phone.textContent = member.phone_number;
         website.setAttribute("href", `${member.website_url}`);
+        website.setAttribute("target", "_blank");
         website.textContent = member.website_url;
         join.textContent = `Member since: ${member.join_date}`
 
