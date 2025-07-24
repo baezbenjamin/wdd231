@@ -147,13 +147,10 @@ h1 {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 10px;
     max-width: 1000px;
-    /* margin:  0 auto; */
     margin: 15px auto 15px auto;
     padding: 10px ;
-    /* padding: 15px; */
 
     section {
-        /* background-color: #eee; */
         background-color: white;
         border: solid 1px var(--secondary-color);
         display: flex;
@@ -182,7 +179,6 @@ h1 {
 
     section img {
         width: 200px;
-        /* border: solid 1px var(--secondary-color); */
         margin: 10px 0 10px 0;
     }
 
@@ -235,9 +231,7 @@ h1 {
 
     section:hover {
         background-color: #0471A6;
-        /* border: solid 1px var(--secondary-color); */
         color: #eee;
-        /*  border-radius: 0.5rem; */
 
         a {
             color: var(--secondary-color);
