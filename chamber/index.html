@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luque Chamber of Commerce - Home Page</title>
+    <meta name="author" content="Benjamin Baez">
+    <meta name="description" content="Get to know the businesses opportunities in Luque">
+
+    <meta property="og:title" content="Luque Chamber of Commerce - Home Page">
+    <meta property="og:description" content="Get to know the businesses opportunities in Luque">
+    <meta property="og:image" content="https://baezbenjamin.github.io/wdd231/chamber/images/ogimage.jpg">
+    <meta property="og:url" content="https://baezbenjamin.github.io/wdd231/chamber/index.html">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/home-small.css">
+    <link rel="stylesheet" href="styles/home-larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/index.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <img src="images/shop-window.svg" alt="Logo of the Luque Chamber of Commerce">
+        <span>Luque Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburguer" aria-label="Display menu"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <img class="cover" src="images/town-hero.jpg" alt="Luque Square Picture">
+            <a href="#">Join Us</a>
+        </div>
+        <h1>Home</h1>
+        <article class="middle">
+            <section>
+                <h2>Events</h2>
+                <p>Saturday 5:30pm: Savings Account with Interest by Ueno Bank</p>
+                <p>Monday 10:00am: Healthy body and mind by Quiero Fruta</p>
+                <p>Tuesday 8:00pm: Blending tradition with modernity by Don Vito</p>
+            </section>
+            <section id="current-weather">
+                <h2>Current Weather</h2>
+            </section>
+            <section id="weather-forecast">
+                <h2>Weather Forecast</h2>
+            </section>
+        </article>
+        <article class="spotlights">
+        </article>
+    </main>
+    <footer>
+        <div class="info">
+            <strong>Luque Chamber of Commerce</strong>
+            <p>3020 Fotografos del Chaco</p>
+            <p>Luque, Central, Paraguay</p>
+            <p>info@luquecc.org</p>
+            <p>956-96421</p>
+        </div>
+        <div class="social">
+            <a href="https://youtube.com" target="_blank"><img src="images/youtube.svg" alt="YouTube Logo" height="16"
+                    width="16"></a>
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook.svg" alt="Facebook Logo"
+                    height="16" width="16"></a>
+            <a href="https://linkedin.com" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn Logo"
+                    height="16" width="16"></a>
+        </div>
+        <div class="aboutme">
+            <p>WDD 231 Class Project</p>
+            <p>Benjamin Baez</p>
+            <p>&copy;<span id="currentyear"></span> Luque Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
