@@ -1,5 +1,6 @@
 const currentWeatherCard = document.querySelector("#current-weather");
 const weatherForecastCard = document.querySelector("#weather-forecast");
+const spotlights = document.querySelector(".spotlights");
 
 const currentWeatherUrl = 'https://api.openweathermap.org/data/2.5/weather?lat=-25.25&lon=-57.49&appid=b5340ac44c6bf72997251db9a10cfb3a&units=metric';
 const weatherForecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=-25.25&lon=-57.49&appid=b5340ac44c6bf72997251db9a10cfb3a&units=metric';
@@ -92,3 +93,68 @@ function displayWeatherForecast(data) {
     weatherForecastCard.appendChild(secondDayWeather);
     weatherForecastCard.appendChild(thirdDayWeather);
 }
+
+async function getMemberData() {
+    const response = await fetch("data/members.json");
+    const data = await response.json();
+    console.log(data);
+    displayMembers(getThreeMembers(data.members));
+}
+
+getMemberData();
+
+const displayMembers = (members) => {
+    members.forEach((member) => {
+        let card = document.createElement('section');
+        let name = document.createElement('h2');
+        let tag_line = document.createElement('p');
+        let logo = document.createElement('img');
+        let email = document.createElement('p');
+        let phone = document.createElement('p');
+        let website = document.createElement('a');
+
+        name.textContent = member.name;
+        tag_line.setAttribute("class", "tagline");
+        tag_line.textContent = member.tag_line;
+        logo.setAttribute("src", `images/${member.img}`);
+        logo.setAttribute("alt", `${member.name} Logo`);
+        logo.setAttribute("loading", "lazy");
+        logo.setAttribute("width", "100");
+        logo.setAttribute("height", "auto");
+        email.innerHTML = `<strong>EMAIL: </strong>${member.email}`;
+        phone.innerHTML = `<strong>PHONE: </strong>${member.phone_number}`;
+        website.setAttribute("href", `${member.website_url}`);
+        website.setAttribute("target", "_blank");
+        website.textContent = member.website_url;
+
+        card.appendChild(name);
+        card.appendChild(tag_line);
+        card.appendChild(logo);
+        card.appendChild(email);
+        card.appendChild(phone);
+        card.appendChild(website);
+
+        spotlights.appendChild(card);
+    })
+}
+
+function getThreeMembers(members) {
+    let membersSilverGold = [];
+    
+    for (let i = 0; i < members.length; i++) {
+        if (members[i].membership_level != "1") {
+            membersSilverGold.push(members[i]);
+        }
+    }
+    
+    let justThree = []
+    
+    for (let j = 0; j < 3; j++) {
+        randomNumber = Math.floor(Math.random() * membersSilverGold.length);
+        justThree.push(membersSilverGold[randomNumber]);
+        membersSilverGold.splice(randomNumber, 1);
+    }
+    
+    return justThree;
+}
+

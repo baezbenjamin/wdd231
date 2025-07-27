@@ -142,7 +142,3 @@ footer p {
     text-decoration: underline;
     color: var(--secondary-color);
 }
-
-.middle {
-    display: flex;
-}

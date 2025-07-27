@@ -7,61 +7,74 @@
             "website_url": "https://www.casafrescaparaguay.com/",
             "img": "casa-fresca.jpg",
             "membership_level": "1",
-            "join_date": "06/09/2024"
+            "join_date": "06/09/2024",
+            "tag_line": "Fresh Food, Fresh Life"
         },
         {
             "name": "Compu Market",
             "adress": "3030 Criollos de América",
             "phone_number": "165-78859",
+            "email": "compumarket@gmail.com",
             "website_url": "https://www.compumarket.com.py/",
             "img": "compu-market.jpg",
             "membership_level": "1",
-            "join_date": "15/07/2023"
+            "join_date": "15/07/2023",
+            "tag_line": "Your Computer's House"
         },
         {
             "name": "Don Vito",
             "adress": "5782 Av. Corrales",
             "phone_number": "336-39033",
+            "email": "donvito@gmail.com",
             "website_url": "https://menu.donvito.com.py/",
             "img": "don-vito.jpg",
             "membership_level": "2",
-            "join_date": "31/03/2022"
+            "join_date": "31/03/2022",
+            "tag_line": "Meals to Share"
         },
         {
             "name": "Luqueño Hockey",
             "adress": "1811 Mariscal Lopez",
             "phone_number": "232-53481",
+            "email": "luqenohockey@gmail.com",
             "website_url": "https://www.clubsportivoluqueno.com.py/",
             "img": "luqueño-hockey.jpg",
             "membership_level": "2",
-            "join_date": "09/08/2021"
+            "join_date": "09/08/2021",
+            "tag_line": "More than a Club"
         },
         {
             "name": "Petropar",
             "adress": "9518 Cnel. Oviedo",
             "phone_number": "310-97389",
+            "email": "petropar@gmail.com",
             "website_url": "https://www.petropar.gov.py/",
             "img": "petropar.jpg",
             "membership_level": "3",
-            "join_date": "13/09/2020"
+            "join_date": "13/09/2020",
+            "tag_line": "In each Kilometer"
         },
         {
             "name": "Ueno Bank",
             "adress": "6584 Av. San Luis",
             "phone_number": "250-36881",
+            "email": "uenobank@gmail.com",
             "website_url": "https://www.ueno.com.py/",
             "img": "ueno-bank.jpg",
             "membership_level": "3",
-            "join_date": "28/10/2019"
+            "join_date": "28/10/2019",
+            "tag_line": "The Bank of Everyone"
         },
         {
             "name": "Quiero Fruta",
             "adress": "5842 Cerro Cora",
             "phone_number": "192-38367",
+            "email": "quierofruta@gmail.com",
             "website_url": "https://quierofruta.com.py/carta/",
             "img": "quiero-fruta.jpg",
             "membership_level": "2",
-            "join_date": "03/01/2018"
+            "join_date": "03/01/2018",
+            "tag_line": "Your Meeting Point"
         }
     ]
 }
