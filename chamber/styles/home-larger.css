@@ -1,4 +1,5 @@
-@media only screen and (min-width: 38rem) {
+
+@media only screen and (min-width: 600px) {
 
     header, main, nav, footer {
         max-width: 1200px;
@@ -31,8 +32,61 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+}
 
+@media (min-width: 630px) {
     .middle {
-        display: flex;
+        display: grid;
+        grid-template-columns: 150px 150px 150px 150px;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px;
+        justify-self: center;
+    }
+
+    .events {
+        width: 100%;
+        grid-column: 1 / 5;
+        grid-row: 1 / 2;
+    }
+
+    #current-weather {
+        width: 100%;
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+    }
+
+    #weather-forecast {
+        width: 100%;
+        grid-column: 3 / 5;
+        grid-row: 2 / 3;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .middle {
+        display: grid;
+        grid-template-columns: 400px 300px 300px;
+        grid-template-rows: 1fr;
+        grid-gap: 10px;
+        justify-self: center;
+    }
+
+    .events {
+       width: 100%;
+       grid-row: 1 / 2;
+       grid-column: 1 / 2;
+    }
+    
+    #current-weather {
+        width: 100%;
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+    }
+
+    #weather-forecast {
+        width: 100%;
+        grid-row: 1 / 2;
+        grid-column: 3 / 4;
     }
 }

@@ -48,6 +48,8 @@ function displayCurrentWeather(data) {
     let sunrise = document.createElement('p');
     let sunset = document.createElement('p');
     
+    let firstDayWeather = document.createElement('p');
+
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     weatherIcon.setAttribute("src", iconsrc);
     weatherIcon.setAttribute("alt", data.weather[0].main);
@@ -65,6 +67,8 @@ function displayCurrentWeather(data) {
     sunrise.textContent = `Sunrise: ${sunriseFullDate.getHours()}:${sunriseFullDate.getMinutes()}am`;
     sunset.textContent = `Sunset: ${sunsetFullDate.getHours()}:${sunsetFullDate.getMinutes()}pm`;
 
+    firstDayWeather.innerHTML = `Today: <strong>${data.main.temp}</strong>&deg;C`;
+
     currentWeatherCard.appendChild(weatherIcon);
     currentWeatherCard.appendChild(currentTemp);
     currentWeatherCard.appendChild(desc);
@@ -73,23 +77,25 @@ function displayCurrentWeather(data) {
     currentWeatherCard.appendChild(humidity);
     currentWeatherCard.appendChild(sunrise);
     currentWeatherCard.appendChild(sunset);
+
+    weatherForecastCard.appendChild(firstDayWeather);
 }
 
 let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 function displayWeatherForecast(data) {
-    let firstDayWeather = document.createElement('p');
+    
     let secondDayWeather = document.createElement('p');
     let thirdDayWeather = document.createElement('p');
 
-    const tomorrow = new Date(data.list[10].dt_txt);
-    const aftertomorrow = new Date(data.list[18].dt_txt);
+    const tomorrow = new Date(data.list[5].dt_txt);
+    console.log(tomorrow)
+    const aftertomorrow = new Date(data.list[13].dt_txt);
+    console.log(aftertomorrow)
+    
+    secondDayWeather.innerHTML = `${days[tomorrow.getDay()]}: <strong>${data.list[5].main.temp}</strong>&deg;C`;
+    thirdDayWeather.innerHTML = `${days[aftertomorrow.getDay()]}: <strong>${data.list[13].main.temp}</strong>&deg;C`;
 
-    firstDayWeather.innerHTML = `Today: <strong>${data.list[0].main.temp}</strong>&deg;C`;
-    secondDayWeather.innerHTML = `${days[tomorrow.getDay()]}: <strong>${data.list[10].main.temp}</strong>&deg;C`;
-    thirdDayWeather.innerHTML = `${days[aftertomorrow.getDay()]}: <strong>${data.list[18].main.temp}</strong>&deg;C`;
-
-    weatherForecastCard.appendChild(firstDayWeather);
     weatherForecastCard.appendChild(secondDayWeather);
     weatherForecastCard.appendChild(thirdDayWeather);
 }
@@ -107,10 +113,11 @@ const displayMembers = (members) => {
     members.forEach((member) => {
         let card = document.createElement('section');
         let name = document.createElement('h2');
-        let tag_line = document.createElement('p');
+        let tag_line = document.createElement('span');
         let logo = document.createElement('img');
         let email = document.createElement('p');
         let phone = document.createElement('p');
+        let url = document.createElement('p');
         let website = document.createElement('a');
 
         name.textContent = member.name;
@@ -126,13 +133,15 @@ const displayMembers = (members) => {
         website.setAttribute("href", `${member.website_url}`);
         website.setAttribute("target", "_blank");
         website.textContent = member.website_url;
-
+        url.innerHTML = `<strong>URL:</strong>`;
+        
         card.appendChild(name);
         card.appendChild(tag_line);
         card.appendChild(logo);
         card.appendChild(email);
         card.appendChild(phone);
-        card.appendChild(website);
+        url.appendChild(website);
+        card.appendChild(url);
 
         spotlights.appendChild(card);
     })
