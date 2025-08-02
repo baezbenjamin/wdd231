@@ -78,62 +78,31 @@ const courses = [
     }
 ]
 
-createCourseCard(courses);
-const allLink = document.querySelector('#all');
-const cseLink = document.querySelector('#cse');
-const wddLink = document.querySelector('#wdd');
-
-allLink.addEventListener('click', () => {
-    createCourseCard(courses)
-})
-
-cseLink.addEventListener('click', () => {
-    createCourseCard(courses.filter(course => course.subject == "CSE"))
-})
-
-wddLink.addEventListener('click', () => {
-    createCourseCard(courses.filter(course => course.subject == "WDD"))
-})
-
-function createCourseCard(filteredCourses) {
-    let creditsSum = 0;
-    document.querySelector('.container').innerHTML = "";
-    filteredCourses.forEach(courses => {
-        let card = document.createElement("button");
-        if (courses.completed == true) {
-            card.textContent = `${courses.subject} ${courses.number} ✅`;
-        }
-        else {
-            card.textContent = `${courses.subject} ${courses.number}`;
-        }
-        document.querySelector(".container").appendChild(card);
-        creditsSum += courses.credits;
-        card.setAttribute('class', 'courseDiv')
-
-        card.addEventListener('click', () => {
-            displayCourseDetails(courses);
-        });
-    })
-    const totalCredits = document.querySelector('#credits');
-    totalCredits.textContent = creditsSum;
-}
-
+const courseDiv = document.querySelector('.courseDiv');
 const courseDetails = document.querySelector('#course-details');
 
-function displayCourseDetails(course) {
-    courseDetails.innerHTML = '';
-    courseDetails.innerHTML = `
-    <button id="closeModal">❌</button>
-    <h2>${course.subject} ${course.number}</h2>
-    <h3>${course.title}</h3>
-    <p><strong>Credits</strong>: ${course.credits}</p>
-    <p><strong>Certificate</strong>: ${course.certificate}</p>
-    <p>${course.description}</p>
-    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
-  `;
-    courseDetails.showModal();
+// function displayCourseDetails(course) {
+//     courseDetails.innerHTML = '';
+//     courseDetails.innerHTML = `
+//     <button id="closeModal">❌</button>
+//     <h2>${course[0].subject} ${course[0].number}</h2>
+//     <h3>${course[0].title}</h3>
+//     <p><strong>Credits</strong>: ${course[0].credits}</p>
+//     <p><strong>Certificate</strong>: ${course[0].certificate}</p>
+//     <p>${course[0].description}</p>
+//     <p><strong>Technologies</strong>: ${course[0].technology.join(', ')}</p>
+//   `;
+//     courseDetails.showModal();
 
-    closeModal.addEventListener("click", () => {
-        courseDetails.close();
-    });
-}
+//     closeModal.addEventListener("click", () => {
+//         courseDetails.close();
+//     });
+// }
+
+// courseDiv.addEventListener('click', () => {
+//     displayCourseDetails(courses);
+// });
+
+courseDiv.addEventListener('click', () => {
+    courseDetails.showModal();
+})

@@ -1,0 +1,55 @@
+:root {
+    --primary-color: #d4a54e;
+    --secondary-color: #933807;
+    --accent1-color: #6d1d03;
+
+    --heading-font: "Oldenburg", serif;
+    --paragraph-font: "Noto Serif", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--paragraph-font);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    padding: 10px;
+    font-family: var(--heading-font);
+}
+
+.site-info {
+    margin: 10px 10px 10px 10px;
+    max-width: 300px;
+    padding: 5px;
+    border: 1px solid var(--accent1-color);
+}
+
+.site-info span {
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+}
+
+.specifications {
+    margin-left: 10px;
+}
+
+.specifications h2 {
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+}
+
+.wireframe {
+    margin-left: 10px;
+}
+
+.wireframe h2 {
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+}
