@@ -43,6 +43,73 @@
         </nav>
     </header>
     <main>
+        <h1>Join</h1>
+        <div class="form-div">
+            <h2>Member Application Form</h2>
+            <form method="GET" action="thankyou.html" class="designOne">
+                <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+                <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+                <label>Title <input type="text" name="title" required autocomplete="organization-title" title="Your Title" pattern="[\- A-Za-z]{7,}"></label>
+                <label>Email <input type="email" name="email" required placeholder="myemail@outlook.com" title="Your Email" autocomplete="email"></label>
+                <label>Cell Phone <input type="tel" name="phone" autocomplete="tel" title="Your Phone Number"></label>
+                <label>Organization <input type="text" required name="organization" title="Your organization" autocomplete="organization"></label>
+                <label>Membership Level
+                    <select name="membership-level" required>
+                        <option value="">None</option>
+                        <option value="NP">Non Profit Organizations</option>
+                        <option value="Bronze">Bronze Membership</option>
+                        <option value="Silver">Silver Membership</option>
+                        <option value="Gold">Gold Membership</option>
+                    </select>
+                </label>
+                <label>Description <textarea name="description" title="Business/organization's description"></textarea></label>
+                <input type="hidden" name="timestamp" id="timestamp" value="">
+                <input type="submit" value="Apply for Membership">
+            </form>
+        </div>
+        <div class="levels-info">
+            <h2>Membership Levels</h2>
+                
+            <section>
+                <h3>Non Profit Membership Level</h3>
+                <button id="displayNp">Learn More</button>
+                <dialog id="np-details">
+                    <button id="closeNp">❌</button>
+                    <h3>Non Profit Membership Level</h3>
+                    <p>This is the Membership for organizations that don't make profit. You can participate in the activities and benefits of the chamber.</p>
+                </dialog>
+            </section>
+                
+            <section>
+                <h3>Bronze Membership Level</h3>
+                <button id="displayBronze">Learn More</button>
+                <dialog id="bronze-details">
+                    <button id="closeBronze">❌</button>
+                    <h3>Bronze Membership Level</h3>
+                    <p>With the Bronze Membership your company can attend the Chamber's meetings and have benefits like discounts and workshops.</p>
+                </dialog>
+            </section>
+                
+            <section>
+                <h3>Silver Membership Level</h3>
+                <button id="displaySilver">Learn More</button>
+                <dialog id="silver-details">
+                    <button id="closeSilver">❌</button>
+                    <h3>Silver Membership Level</h3>
+                    <p>With the Silver Membership your company is an active participant of the Chamber, being advertised and having preference in the market.</p>
+                </dialog>
+            </section>
+                
+            <section>
+                <h3>Gold Membership Level</h3>
+                <button id="displayGold">Learn More</button>
+                <dialog id="gold-details">
+                    <button id="closeGold">❌</button>
+                    <h3>Gold Membership Level</h3>
+                    <p>The Gold Membership allows your company to be advertised and to be the main sponsor of the events held. You can invite and accept new members and have the benefits of lower membership levels.</p>
+                </dialog>
+            </section>
+        </div>
     </main>
     <footer>
         <div class="info">
