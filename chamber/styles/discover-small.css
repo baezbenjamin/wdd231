@@ -114,3 +114,58 @@ footer p {
     width: 44px;
     height: 44px;
 }
+
+h1 {
+    margin-left: 10px;
+}
+
+/* Display cards */
+
+#all-activities div {
+    margin: 1rem 8px;
+    border: 1px solid #999;
+    background-color: #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "picture"
+    "description"
+    "address"
+    "learmore";
+}
+
+#all-activities div h2 {
+    margin: 1rem 10px;
+    grid-area: name;
+}
+
+#all-activities div img {
+    width: 100%;
+    grid-area: picture;
+}
+
+#all-activities div p {
+    margin: 1rem 10px;
+    grid-area: description;
+}
+
+#all-activities div address {
+    margin: 1rem 10px;
+    grid-area: address;
+}
+
+#all-activities div a {
+    margin: 1rem 10px;
+    text-align: center;
+    background-color: var(--primary-color);
+    width: 70%;
+    height: 40px;
+    justify-self: center;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    color: #eee;
+    align-content: center;
+    /* grid-area: learnmore; */
+}

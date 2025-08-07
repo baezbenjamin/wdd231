@@ -1,0 +1,52 @@
+{
+  "activities": [
+    {
+      "name": "Visit Ñu Guazú Park",
+      "address": "Ruta Mcal. Estigarribia, Luque (near Silvio Pettirossi Airport)",
+      "description": "A large green space perfect for picnics, jogging, or relaxing. It has walking trails, playgrounds, and open fields.",
+      "photo_url": "nu_guazu.webp"
+    },
+    {
+      "name": "Explore the Museo del Aviación (Aviation Museum)",
+      "address": "Av. Aeropuerto Internacional, Luque (inside the Air Force base)",
+      "description": "A must-visit for aviation enthusiasts, featuring historic planes, military aircraft, and Paraguay’s aeronautical history.",
+      "photo_url": "museo_aviacion.webp"
+    },
+    {
+      "name": "Shop at Mercado de Luque (Luque Market)",
+      "address": "Av. San Blas, Luque (near downtown)",
+      "description": "Famous for leather goods (especially handmade soccer balls), crafts, and traditional Paraguayan souvenirs.",
+      "photo_url": "mercado_luque.webp"
+    },
+    {
+      "name": "Try Authentic Paraguayan Food at Lido Bar",
+      "address": "Av. San Blas 950, Luque",
+      "description": "A classic spot to try sopa paraguaya, chipá, and mbejú—best enjoyed with tereré (cold herbal tea).",
+      "photo_url": "lido_bar.webp"
+    },
+    {
+      "name": "Watch a Soccer Match at Estadio Defensores del Chaco",
+      "address": "Av. República Argentina, Asunción (near Luque)",
+      "description": "Paraguay’s national stadium hosts thrilling matches—home to the national team and local clubs.",
+      "photo_url": "estadio_defensores_del_chaco.webp"
+    },
+    {
+      "name": "Visit Casa de la Cultura (House of Culture)",
+      "address": "Av. San Blas, Luque (near City Hall)",
+      "description": "Hosts art exhibitions, folk music, and cultural events showcasing Paraguayan traditions.",
+      "photo_url": "casona_julio_correa.webp"
+    },
+    {
+      "name": "Day Trip to Areguá",
+      "address": "Areguá, Central Department (30 min from Luque)",
+      "description": "A charming colonial town with artisan shops, ceramics, and Lake Ypacaraí views.",
+      "photo_url": "aregua_cathedral.webp"
+    },
+    {
+      "name": "Experience Nightlife on Avenida San Blas",
+      "address": "Av. San Blas, Luque (main nightlife strip)",
+      "description": "Bars, live music (polka & guarania), and karaoke spots for a fun night out.",
+      "photo_url": "nightlife.webp"
+    }
+  ]
+}

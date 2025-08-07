@@ -38,4 +38,28 @@
     .list section {
         font-size: medium;
     }
+
+    #all-activities div {
+        grid-template-areas:
+        "picture name"
+        "picture description"
+        "picture address"
+        "learnmore learnmore";        
+    }
+
+    #all-activities div img {
+        width: 300px;
+    }
+
+    #all-activities div a {
+        grid-area: learnmore;
+    }
+}
+
+@media only screen and (min-width: 64rem) {
+    
+    #all-activities {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
