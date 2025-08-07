@@ -1,0 +1,127 @@
+:root {
+    --primary-color: #d4a54e;
+    --secondary-color: #933807;
+    --accent1-color: #6d1d03;
+
+    --heading-font: "Oldenburg", serif;
+    --paragraph-font: "Noto Serif", serif;
+}
+
+* {
+    /* margin: 0; */
+    /* padding: 0; */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--paragraph-font);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 30px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: center;
+    background-color: var(--primary-color);
+    column-gap: 8px;
+}
+
+header span {
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+    font-size: larger;
+}
+
+header img {
+    width: 30px;
+    justify-self: center;
+}
+
+.hamburguer {
+    background: none;
+    border: none;
+    color: var(--accent1-color);
+    cursor: pointer;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburguer::before {
+    content: "\2630";
+}
+
+.hamburguer.show::before {
+    content: "\00D7";
+}
+
+.navigation {
+    display: none;
+    grid-column: 1 / 4;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .5rem 10px;
+    color: var(--accent1-color);
+    text-decoration: none;
+    border-bottom: solid 1px var(--secondary-color);
+    font-family: var(--heading-font);
+}
+
+.navigation li.current {
+    background-color: var(--secondary-color);
+}
+
+.navigation li.current a {
+    color:#e6d0a4;
+}
+
+.navigation a:hover {
+    background-color: var(--accent1-color);
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 1rem 10px;
+    text-align: left;
+}
+
+footer p {
+    margin-bottom: 2px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+    margin: 10px 0 10px 0;
+}
+
+.social a {
+    display: flex;
+    width: 44px;
+    height: 44px;
+}
+
+.social img {
+    width: 44px;
+    height: 44px;
+}
+
+.aboutme a {
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+}
