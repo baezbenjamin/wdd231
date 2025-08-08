@@ -6,7 +6,7 @@ let numVisits = Number(localStorage.getItem("visitsCounter")) || 0;
 let lastVisit = Number(localStorage.getItem("timeStamp")) || 0;
 let difference = currentTimeStamp - lastVisit;
 
-if (numVisits == 0) {
+if (numVisits == 0 && lastVisit == 0) {
     visitsDisplay.innerHTML = `Welcome! Let us know if you have any questions.`;
 } else if (difference < 86400000) {
     visitsDisplay.innerHTML = `Back so soon! Awesome!`;
