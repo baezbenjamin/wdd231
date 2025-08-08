@@ -49,6 +49,12 @@
 
     #all-activities div img {
         width: 300px;
+        transition: 0.5s;
+    }
+
+    #all-activities div img:hover {
+        box-shadow: 0 0 60px var(--secondary-color);
+        border-radius: 8px;
     }
 
     #all-activities div a {

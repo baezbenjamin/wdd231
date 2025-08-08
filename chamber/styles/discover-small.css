@@ -169,3 +169,15 @@ h1 {
     align-content: center;
     /* grid-area: learnmore; */
 }
+
+#visits {
+    background-color: var(--primary-color);
+    width: 300px;
+    color: white;
+    justify-self: center;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    align-content: center;
+}
