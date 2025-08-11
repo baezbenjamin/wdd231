@@ -1,0 +1,40 @@
+{
+    "activities": [
+        {
+            "name": "Heroes' Day",
+            "date": "03-01",
+            "image": "heroes_day.webp",
+            "description": "Heroes' Day in Paraguay is commemorated every March 1st in honor of the heroes and defenders of the nation, especially the death of Marshal Francisco Solano López, president of the country and a central figure in the War of the Triple Alliance (1864–1870). This date pays tribute to his sacrifice and that of all Paraguayans who fought for national sovereignty."
+        },
+        {
+            "name": "Easter week",
+            "date": "04-06",
+            "image": "easter_week.webp",
+            "description": "Holy Week is one of the most important religious celebrations of the year and combines Catholic traditions with popular customs. It begins on Palm Sunday and culminates on Easter Sunday, commemorating the passion, death, and resurrection of Jesus Christ. During these days, many families participate in masses, processions, and reflective activities. In addition, it is common to prepare traditional foods such as chipa, which is made especially for Holy Thursday, and fish in various recipes for Good Friday. Many people travel to their hometowns to reunite with family and celebrate the holiday as a community, making Holy Week a time of both faith and family unity."
+        },
+        {
+            "name": "Independence of Paraguay",
+            "date": "05-15",
+            "image": "independence.webp",
+            "description": "Paraguay's Independence Day is celebrated every May 14 and 15, commemorating the events of 1811 that marked the break with Spanish colonial rule. During the night of May 14 and the early morning of May 15, a group of patriots led by figures such as Fulgencio Yegros, Pedro Juan Caballero, and Vicente Ignacio Iturbe seized control of the Paraguayan barracks and forced the Spanish authorities to accept a provisional Paraguayan government. The date is commemorated throughout the country with civic and military parades, official events, and cultural activities, highlighting the courage and determination of the heroes who achieved independence without bloodshed and laid the foundations of the Paraguayan nation."
+        },
+        {
+            "name": "Saint John",
+            "date": "06-24",
+            "image": "saint_jhon.webp",
+            "description": "The San Juan festival in Paraguay is celebrated every June 24th and is one of the country's most joyful and colorful popular traditions. It has religious roots in honor of Saint John the Baptist, but also includes traditional customs and games that give it a festive feel. During this celebration, the so-called Sanjuanaras are organized, where people participate in traditional games such as the pelota tata (flaming ball), the toro candil (candle tore), the paila jeherei (a spinning pot with surprises), and the ring race. Gastronomy takes center stage, with typical dishes such as chipa asador (asador chipa), mbeyú (a spit of water), mbeju ku'i (a spit of water), and batiburrillo (a spit of water). These activities bring together entire communities in plazas, schools, and neighborhoods, turning the festival into a time of socializing, fun, and a revival of Paraguayan traditions."
+        },
+        {
+            "name": "Kure Luque Ara",
+            "date": "07-01",
+            "image": "kure_luque_ara.webp",
+            "description": "Kure Luque Ára is a popular festival in the city of Luque, Paraguay, held every October and honoring one of its most traditional dishes: kure kesu (pork with cheese). It began as a gastronomic and cultural fair to highlight Luqueño cuisine and today brings together thousands of visitors who enjoy traditional foods, live music, folk dances, and craft exhibits. During the event, the streets are filled with stands offering not only the famous kure kesu, but also other traditional Paraguayan dishes. It is a celebration that combines gastronomy, cultural identity, and popular joy, becoming one of Luque's most representative and beloved festivals."
+        },
+        {
+            "name": "Founding of Asunción",
+            "date": "08-15",
+            "image": "founding_asuncion.webp",
+            "description": "The founding of Asunción is celebrated every August 15th, the date on which, in 1537, Captain Juan de Salazar y Espinosa established the Fort of Nuestra Señora Santa María de la Asunción on the banks of the Paraguay River. This city became a strategic point for Spanish colonization and was known as the \"Mother of Cities\" as expeditions departed from there to found other settlements in the region. Today, the commemoration includes civic events, parades, craft fairs, and cultural and religious activities in honor of the Virgin of the Assumption, the city's patron saint. It is a date that celebrates both the history and identity of the Paraguayan capital."
+        }
+    ]
+}
