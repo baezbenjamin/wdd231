@@ -1,0 +1,109 @@
+{
+    "dishes": [
+        {
+            "name": "Chicken Broth",
+            "category": "Broths and Soups",
+            "image": "chicken_broth.webp",
+            "calories_per_serving": "350 kcal",
+            "description": "Paraguayan chicken broth is a recipe that has been passed down from generation to generation, offering an unforgettable flavor that warms the soul. This dish is ideal for sharing with the family for a Sunday lunch, a rainy winter day, or a cozy dinner."
+        },
+        {
+            "name": "Cassava Balls",
+            "category": "Fittings",
+            "image": "cassava_balls.webp",
+            "calories_per_serving": "80 kcal",
+            "description": "Cassava balls are a delicious and versatile option ideal for snacks, appetizers or as a snack. Their soft texture on the inside and crunchy on the outside, combined with the flavor of the cheese, makes them irresistible."
+        },
+        {
+            "name": "Corn Polenta",
+            "category": "Fittings",
+            "image": "corn_polenta.webp",
+            "calories_per_serving": "250 kcal",
+            "description": "Corn polenta is a classic dish that stands out for its simplicity and versatility. Originating from the culinary traditions of several regions of South America, this particular recipe stands out with the special touch of Paraguay cheese, achieving a creamy and delicious flavor."
+        },
+        {
+            "name": "Chipa Pireca",
+            "category": "Typical",
+            "image": "chipa_pireca.webp",
+            "calories_per_serving": "100 kcal",
+            "description": "Chipa pireca, also known as chipa cuerito or chipa amasada, is one of the traditional preparations of Paraguay. It is a fried cake made with flour, lard, salt and water."
+        },
+        {
+            "name": "Liver Steak",
+            "category": "Main course",
+            "image": "liver_steak.webp",
+            "calories_per_serving": "253 kcal",
+            "description": "Liver steak is a typical dish of our gastronomy, it would be the classic liver with onions in other Latin American countries. As you can infer, it is a very tasty dish that also provides a large amount of protein and nutrients necessary for our body."
+        },
+        {
+            "name": "Cheesy Bean Soup",
+            "category": "Broths and soups",
+            "image": "cheese_bean_soup.webp",
+            "calories_per_serving": "0 kcal",
+            "description": "Bean soup with cheese, also known as kumanda peky kesu in the Guarani language, which means young bean with cheese, is a typical dish of Paraguay. As you can imagine, it is a thick broth made from beans, noodles, cheese, among other ingredients."
+        },
+        {
+            "name": "Koygua Steak",
+            "category": "Main course",
+            "image": "koygua_steak.webp",
+            "calories_per_serving": "595 kcal",
+            "description": "The koygua steak is a typical dish of Paraguayan gastronomy. It is well known that Paraguay does not have outlets to the sea, so most of its dishes are made from red meat. A faithful representation is this dish, made with beef steak, some vegetables and spices."
+        },
+        {
+            "name": "Chipa Guazú",
+            "category": "Typical",
+            "image": "chipa_guazu.webp",
+            "calories_per_serving": "225 kcal",
+            "description": "The chipa guazú is ideal to accompany several dishes of Paraguayan cuisine, for example a roast, a milanesa or some delicious noodles. This recipe, like some others from Paraguay, is also consumed and prepared in the northwest of Argentina."
+        },
+        {
+            "name": "Vori Vori",
+            "category": "Broths and soups",
+            "image": "vori_vori.webp",
+            "calories_per_serving": "310 kcal",
+            "description": "Vori vori, also written as o bori bori, is one of the most popular and traditional soups in Paraguayan cuisine. It is prepared based on chicken, corn balls, Paraguay cheese, and is of a great flavor that everyone who tries it likes."
+        },
+        {
+            "name": "Paraguayan Soup",
+            "category": "Typical",
+            "image": "paraguayan_soup.webp",
+            "calories_per_serving": "280 kcal",
+            "description": "Paraguayan soup is one of the emblems of Paraguayan cuisine, however for historical and cultural reasons it is also prepared and consumed in northeastern Argentina. Some also know it as Guarani soup. It is ideal to accompany a coffee, tea or a delicious mate."
+        },
+        {
+            "name": "Chipa",
+            "category": "Typical",
+            "image": "chipa.webp",
+            "calories_per_serving": "185 kcal",
+            "description": "Chipa or chipá (Guaraní term) is a kind of bread roll that is prepared from cassava starch, Paraguayan cheese, butter and other elements. Its origin is considered to be the cultural heritage of traditional Guarani and Spanish-Jesuit cuisine. It's a delicious snack ideal to accompany tea, coffee or mate. "
+        },
+        {
+            "name": "Mbejú",
+            "category": "Typical",
+            "image": "mbeju.webp",
+            "calories_per_serving": "196 kcal",
+            "description": "The mbejú is a traditional dish of Paraguayan cuisine that is usually served in the festivities of San Juan, however it can be consumed on any occasion such as breakfast. It combines perfectly to accompany mate, even to have a tea, coffee or a glass of milk. "
+        },
+        {
+            "name": "Mate",
+            "category": "Beverages",
+            "image": "mate.webp",
+            "calories_per_serving": "94 kcal",
+            "description": "Mate is a hot infusion made from yerba mate. It is consumed very frequently throughout the Paraguayan territory."
+        },
+        {
+            "name": "Tereré",
+            "category": "Beverages",
+            "image": "terere.webp",
+            "calories_per_serving": "22 kcal",
+            "description": "Tereré is a cold infusion made with yerba mate leaves, water and a lot of ice, to which it is customary to add medicinal herbs or poha ñana."
+        },
+        {
+            "name": "Cocido",
+            "category": "Beverages",
+            "image": "cocido.webp",
+            "calories_per_serving": "80 kcal",
+            "description": "Cocido quemado is a variation of mate that requires 4 ingredients for its preparation: yerba mate, sugar, burning charcoal embers and water. It is usually eaten hot on winter days or cold when the temperature rises."
+        }
+    ]
+}
