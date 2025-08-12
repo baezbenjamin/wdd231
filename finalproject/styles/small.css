@@ -154,6 +154,12 @@ footer p {
     text-decoration: underline;
 }
 
+h1 {
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+    padding-left: 10px;
+}
+
 /* Information Cards */
 
 section {
