@@ -30,4 +30,72 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    /* Map Part */
+
+    .map {
+        display: grid;
+        grid-template-areas:
+        "image title"
+        "image address"
+        "image description";
+        width: 90%;
+        max-width: 1000px;
+    }
+
+    .map img {
+        grid-area: image;
+        align-self: center;
+        width: auto;
+    }
+
+    .map h2 {
+        grid-area: title;
+        padding-left: 10px;
+    }
+    
+    .map address {
+        grid-area: address;
+        padding-left: 10px;
+    }
+
+    .map p {
+        grid-area: description;
+        padding-left: 10px;
+    }
+
+    /* Activity Part */
+
+    .activities {
+        display: grid;
+        grid-template-areas:
+        "image title"
+        "image description"
+        "image button";
+        width: 90%;
+        max-width: 1000px;
+        height: auto;
+    }
+
+    .activities img {
+        grid-area: image;
+        align-self: center;
+        width: auto;
+    }
+
+    .activities h2 {
+        grid-area: title;
+        padding-left: 10px;
+    }
+
+    .activities p {
+        grid-area: description;
+        padding-left: 10px;
+    }
+
+    .activities a {
+        grid-area: button;
+        padding-left: 10px;
+    }
+
 }
