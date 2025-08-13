@@ -1,0 +1,33 @@
+@media only screen and (min-width: 38rem) {
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 30px auto 300px;
+    }
+
+    .hamburguer {
+        display: none;
+    }
+
+    .navigation {
+        display: inline;
+        grid-column: 3 / 4;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
