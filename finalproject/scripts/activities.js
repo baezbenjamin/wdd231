@@ -10,7 +10,7 @@ async function getActivityData() {
             throw Error(await response.text());
         }
     } catch (error) {
-        console.log(error);
+        all_activities.textContent = error;
     }
 }
 
@@ -60,3 +60,10 @@ function displayActivityDescription(activity) {
         activityDescription.close();
     });
 }
+
+let currentDate = new Date();
+let otherDate = new Date('03-01')
+let thisMonth = currentDate.getMonth()
+let otherMonth = otherDate.getMonth()
+console.log(thisMonth)
+console.log(otherMonth)

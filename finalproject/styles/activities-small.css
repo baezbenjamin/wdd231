@@ -202,3 +202,52 @@ dialog h2 {
     margin: 10px 0;
     text-align: center;
 }
+
+/* Form */
+
+form {
+    margin-left: 10px;
+    border: 1px solid var(--primary-color);
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-size: small;
+    padding-top: 5px;
+}
+
+input[type=text],
+input[type=tel],
+input[type=email] {
+    display: block;
+    margin: 2px 0 10px 0;
+    padding: 5px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    width: 250px;
+}
+
+input[type=submit] {
+    text-align: center;
+    background-color: #d4a54e;
+    color: black;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+
+.selection {
+    align-self: center;
+    padding: 0;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+    vertical-align:text-top;
+    height: 18px;
+    width: 18px;
+}

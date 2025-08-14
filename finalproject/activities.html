@@ -31,7 +31,7 @@
 
 <body>
     <header>
-        <img src="images/logo.svg" alt="Paraguay Meals Logo">
+        <img src="images/logo.svg" alt="Paraguay Meals Logo" loading="lazy">
         <span>Paraguay Meals</span>
         <button id="ham-btn" class="hamburguer" aria-label="Display menu"></button>
         <nav id="nav-bar" class="navigation">
@@ -50,6 +50,21 @@
         <dialog id="activity-description">
 
         </dialog>
+        <div>
+            <h2>Sign Up to our Newsletter</h2>
+            <form method="GET" action="thankyou.html" class="pageForm">
+                <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+                <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+                <label>Email <input type="email" name="email" required placeholder="myemail@outlook.com" title="Your Email"
+                    autocomplete="email"></label>
+                <label>Cell Phone <input type="tel" name="phone" autocomplete="tel" title="Your Phone Number"></label>
+                <label class="selection"><input type="radio" name="offers">Know about offers and promotions</label>
+                <input type="submit" value="Sign Up">
+            </form>
+            <!-- <section class="closest">
+
+            </section> -->
+        </div>
     </main>
     <footer>
         <div>
@@ -60,9 +75,9 @@
             <p>894-60227</p>
         </div>
         <div class="social">
-            <a href="https://linkedin.com" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn Logo"></a>
-            <a href="https://facebook.com" target="_blank"><img src="images/facebook.svg" alt="Facebook Logo"></a>
-            <a href="https://instagram.com" target="_blank"><img src="images/instagram.svg" alt="Instagram Logo"></a>
+            <a href="https://linkedin.com" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn Logo" loading="lazy"></a>
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook.svg" alt="Facebook Logo" loading="lazy"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.svg" alt="Instagram Logo" loading="lazy"></a>
         </div>
         <div class="aboutme">
             <a href="attributions.html">Attributions</a>

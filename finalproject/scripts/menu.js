@@ -16,7 +16,7 @@ async function getDishData() {
             throw Error(await response.text());
         }
     } catch (error) {
-        console.log(error);
+        menus.textContent = error;
     }
 }
 
@@ -56,7 +56,7 @@ const displayFilterOptions = (menu) => {
     menu.forEach((option) => {
 
         if (dishList.includes(`${option.category}`)) {
-            console.log("It's already in the list.");
+            let times = 1;
         } else {
             let select = document.createElement('li');
             let link = document.createElement('a');
@@ -78,12 +78,3 @@ const displayFilterOptions = (menu) => {
         dishList.push(`${option.category}`);
     })
 }
-
-// const optionLinks = document.querySelectorAll('.option');
-
-// optionLinks.forEach(optionLink => {
-//     optionLink.addEventListener('click', () => {
-//         document.querySelector('.active')?.classList.remove('active');
-//         optionLink.classList.add('active');
-//     })
-// })
