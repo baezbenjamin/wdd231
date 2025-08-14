@@ -6,6 +6,12 @@ async function getDishData() {
         if (response.ok) {
             const data = await response.json();
             displayMenu(data.dishes);
+            displayFilterOptions(data.dishes);
+            fullMenu.addEventListener('click', () => {
+                displayMenu(data.dishes);
+                document.querySelector('.active')?.classList.remove('active');
+                fullMenu.classList.add('active');
+            })
         } else {
             throw Error(await response.text());
         }
@@ -17,13 +23,13 @@ async function getDishData() {
 getDishData();
 
 const displayMenu = (menu) => {
+    document.querySelector('.menu').innerHTML = ""
     menu.forEach((dish) => {
         let card = document.createElement('section');
         let name = document.createElement('h2');
         let image = document.createElement('img');
         let calories = document.createElement('p');
         let description = document.createElement('p');
-        // let add = document.createElement('button');
 
         name.textContent = dish.name;
         image.setAttribute("src", `images/${dish.image}`);
@@ -36,8 +42,48 @@ const displayMenu = (menu) => {
         card.appendChild(image);
         card.appendChild(calories);
         card.appendChild(description);
-        // card.appendChild(add);
 
         menus.appendChild(card);
     })
 }
+
+const fullMenu = document.querySelector('#all');
+
+const options = document.querySelector('.filter');
+
+const displayFilterOptions = (menu) => {
+    let dishList = [];
+    menu.forEach((option) => {
+
+        if (dishList.includes(`${option.category}`)) {
+            console.log("It's already in the list.");
+        } else {
+            let select = document.createElement('li');
+            let link = document.createElement('a');
+
+            link.textContent = option.category
+
+            link.setAttribute("href", "#");
+            link.setAttribute("class", "option");
+
+            select.appendChild(link);
+            options.appendChild(select);
+
+            select.addEventListener('click', () => {
+                displayMenu(menu.filter(dish => dish.category == `${option.category}`))
+                document.querySelector('.active')?.classList.remove('active');
+                link.classList.add('active');
+            })
+        }
+        dishList.push(`${option.category}`);
+    })
+}
+
+// const optionLinks = document.querySelectorAll('.option');
+
+// optionLinks.forEach(optionLink => {
+//     optionLink.addEventListener('click', () => {
+//         document.querySelector('.active')?.classList.remove('active');
+//         optionLink.classList.add('active');
+//     })
+// })

@@ -30,21 +30,21 @@
         },
         {
             "name": "Liver Steak",
-            "category": "Main course",
+            "category": "Main Course",
             "image": "liver_steak.webp",
             "calories_per_serving": "253 kcal",
             "description": "Liver steak is a typical dish of our gastronomy, it would be the classic liver with onions in other Latin American countries. As you can infer, it is a very tasty dish that also provides a large amount of protein and nutrients necessary for our body."
         },
         {
             "name": "Cheesy Bean Soup",
-            "category": "Broths and soups",
+            "category": "Broths and Soups",
             "image": "cheese_bean_soup.webp",
             "calories_per_serving": "0 kcal",
             "description": "Bean soup with cheese, also known as kumanda peky kesu in the Guarani language, which means young bean with cheese, is a typical dish of Paraguay. As you can imagine, it is a thick broth made from beans, noodles, cheese, among other ingredients."
         },
         {
             "name": "Koygua Steak",
-            "category": "Main course",
+            "category": "Main Course",
             "image": "koygua_steak.webp",
             "calories_per_serving": "595 kcal",
             "description": "The koygua steak is a typical dish of Paraguayan gastronomy. It is well known that Paraguay does not have outlets to the sea, so most of its dishes are made from red meat. A faithful representation is this dish, made with beef steak, some vegetables and spices."
@@ -58,7 +58,7 @@
         },
         {
             "name": "Vori Vori",
-            "category": "Broths and soups",
+            "category": "Broths and Soups",
             "image": "vori_vori.webp",
             "calories_per_serving": "310 kcal",
             "description": "Vori vori, also written as o bori bori, is one of the most popular and traditional soups in Paraguayan cuisine. It is prepared based on chicken, corn balls, Paraguay cheese, and is of a great flavor that everyone who tries it likes."

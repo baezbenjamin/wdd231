@@ -167,3 +167,25 @@ h1, h2 {
 .menu section p {
     padding: 1px;
 }
+
+/* Filter Options */
+
+.filter {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.option {
+    display: block;
+    padding: .5rem 10px;
+    color: var(--accent1-color);
+    text-decoration: none;
+    border-bottom: solid 1px var(--secondary-color);
+    font-family: var(--paragraph-font);
+}
+
+.active {
+    color: black;
+    background-color: #e6d0a4;
+}

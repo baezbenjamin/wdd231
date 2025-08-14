@@ -1,4 +1,4 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 630px) {
     body {
         max-width: 1200px;
         margin: 0 auto;
@@ -29,5 +29,21 @@
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .filter {
+        justify-self: center;
+        display: flex;
+        justify-content: space-around;
+        border: solid 1px var(--secondary-color);
+        width: 90%;
+    }
+
+    .option {
+        border-bottom: none;
+    }
+
+    .option:hover {
+        text-decoration: underline;
     }
 }
