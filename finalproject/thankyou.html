@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paraguay Meals - Home Page</title>
+    <meta name="author" content="Benjamin Baez">
+    <meta name="description" content="Discover the best Paraguayan restaurant in the area.">
+
+    <meta property="og:title" content="Paraguay Meals - Home Page">
+    <meta property="og:description" content="Discover the best Paraguayan restaurant in the area.">
+    <meta property="og:image" content="https://baezbenjamin.github.io/wdd231/finalproject/images/hero.webp">
+    <meta property="og:url" content="https://baezbenjamin.github.io/wdd231/finalproject/index.html">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/activities-small.css">
+    <link rel="stylesheet" href="styles/activities-larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@0;1&family=Oldenburg&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Paraguay Meals Logo">
+        <span>Paraguay Meals</span>
+        <button id="ham-btn" class="hamburguer" aria-label="Display menu"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="activities.html">Activities</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="thankyou-title">Thank you for applying</h1>
+        <div id="sentInfo"></div>
+    </main>
+    <footer>
+        <div>
+            <strong>Paraguay Meals</strong>
+            <p>236 Anakie Rd</p>
+            <p>Bell Post Hill, Victoria, Australia</p>
+            <p>info@mealspy.org</p>
+            <p>894-60227</p>
+        </div>
+        <div class="social">
+            <a href="https://linkedin.com" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn Logo"></a>
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook.svg" alt="Facebook Logo"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.svg" alt="Instagram Logo"></a>
+        </div>
+        <div class="aboutme">
+            <a href="attributions.html">Attributions</a>
+            <a href="#">Video</a>
+            <p>Benjamin Baez</p>
+            <p>&copy;<span id="currentyear"></span> Paraguay Meals</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>

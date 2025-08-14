@@ -206,7 +206,7 @@ dialog h2 {
 /* Form */
 
 form {
-    margin-left: 10px;
+    justify-self: center;
     border: 1px solid var(--primary-color);
     padding: 10px;
     border-radius: 5px;
@@ -250,4 +250,40 @@ input[type="radio"] {
     vertical-align:text-top;
     height: 18px;
     width: 18px;
+}
+
+.closest {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    justify-self: center;
+    background-color: #e6d0a4;
+    border: 1px solid var(--secondary-color);
+    box-shadow: 0 0 20px #777;
+    margin-bottom: 10px;
+}
+
+.closest img {
+    margin: 0 auto;
+}
+
+.closest p {
+    text-align: center;
+    margin: 5px 5px;
+}
+
+.under-form {
+    display: none;
+}
+
+/* Thank you */
+
+#sentInfo {
+    background-color:#e6d0a4;
+    border-radius: 10px;
+    border: 1px solid var(--secondary-color);
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 90%;
+    justify-self: center;
 }
